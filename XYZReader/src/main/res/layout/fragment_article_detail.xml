@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?colorPrimary"
+            app:elevation="@dimen/appbar_elevation"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentInsetStart="@dimen/toolbar_content_insertStart"
+                android:contentInsetLeft="@dimen/toolbar_content_insertStart"
+                app:contentInsetLeft="@dimen/toolbar_content_insertStart"
+                app:contentInsetStart="@dimen/toolbar_content_insertStart"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:minHeight="@dimen/toolbar_collapsed_height">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/photo"
+                        android:transitionName="phototransition"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/detail_image_height"
+                        android:scaleType="centerCrop"/>
+
+                    <LinearLayout
+                        android:id="@+id/meta_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/detail_header_title_height"
+                        android:background="?colorPrimaryDark"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/keyline_margin"
+                        android:paddingLeft="@dimen/keyline_content_start"
+                        android:paddingRight="@dimen/keyline_margin"
+                        android:paddingBottom="@dimen/keyline_margin"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/article_title"
+                            style="@style/Theme.Bacon.Detail.HeaderTitle"
+                            />
+
+                        <TextView
+                            android:id="@+id/article_byline"
+                            style="@style/Theme.Bacon.Detail.SubHeaderTitle" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <!-- Your Scrollable View -->
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/toolbar_collapsed_height">
+
+                <TextView
+                    android:id="@+id/article_body"
+                    style="@style/Theme.Bacon.Detail.Body" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/share_fab"
+            android:background="@drawable/add_fab_background"
+            android:layout_gravity="bottom|end|right"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_width="@dimen/fab_size"
+            android:layout_height="@dimen/fab_size"
+            android:src="@drawable/ic_share"
+            android:contentDescription="@string/action_share"
+            app:elevation="@dimen/fab_elevation"
+            app:pressedTranslationZ="@dimen/fab_press_translation_z" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

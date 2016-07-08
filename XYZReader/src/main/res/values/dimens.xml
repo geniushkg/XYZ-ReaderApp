@@ -1,0 +1,33 @@
+<resources>
+    <!-- detail -->
+    <dimen name="detail_title_text_size">32sp</dimen>
+    <dimen name="detail_body_text_size">20sp</dimen>
+    <item name="detail_body_line_spacing_multiplier" format="float" type="fraction">1.25</item>
+
+    <dimen name="fab_elevation">2dp</dimen>
+    <dimen name="fab_press_translation_z">6dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="detail_backdrop_height">128dp</dimen>
+    <dimen name="collapsing_toolbar_minheight">56dp</dimen>
+    <dimen name="flexi_appbar_height">128dp</dimen>
+    <dimen name="appbar_elevation">4dp</dimen>
+    <dimen name="keyline_content_start">72dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="keyline_margin">16dp</dimen>
+    <dimen name="keyline_content_end_with_fab">32dp</dimen>
+    <dimen name="toolbar_content_insertStart">0dp</dimen>
+    <dimen name="toolbar_collapsed_height">144dp</dimen>
+    <dimen name="detail_header_title_height">128dp</dimen>
+    <dimen name="detail_image_height">250dp</dimen>
+    <dimen name="detail_subhead_text_size">16sp</dimen>
+    <item name="detail_header_line_spacing_multiplier" format="float" type="fraction">0.9</item>
+    <dimen name="two_line_grid_list_header_height">68dp</dimen>
+    <dimen name="two_line_grid_list_subheader_textsize">12sp</dimen>
+    <dimen name="two_line_grid_list_header_text_padding">16dp</dimen>
+    <dimen name="two_line_grid_list_header_line_padding">4dp</dimen>
+
+    <item name="grid_header_max_line" format="integer" type="integer">2</item>
+    <item name="grid_subheader_max_line" format="integer" type="integer">1</item>
+    <item name="grid_subheader_single_line" format="boolean" type="bool">true</item>
+
+</resources>

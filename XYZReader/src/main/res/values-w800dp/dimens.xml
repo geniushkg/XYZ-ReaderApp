@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="collapsing_toolbar_minheight">56dp</dimen>
+    <dimen name="flexi_appbar_height">256dp</dimen>
+    <dimen name="keyline_content_start">72dp</dimen>
+</resources>
