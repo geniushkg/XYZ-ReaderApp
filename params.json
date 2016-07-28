@@ -1,0 +1,6 @@
+{
+  "name": "Xyz-readerapp",
+  "tagline": "Material Design Make over of News reader Android APP",
+  "body": "# xyzreader-udacityP5\r\nMaterial Design Make over of News reader Android APP\r\n\r\n## Final UI Screenshot\r\n\r\n<img src=\"/../master/blob/xyz-home.png\" height=\"480\" width=\"270\">\r\n<img src=\"blob/xyz-detail.png\" height=\"480\" width=\"270\">\r\n<br>\r\n\r\n## Download APK\r\n\r\n<a href=\"/blob/xyzreader.apk\" rel=\"Download APK\"><img src=\"blob/down_apk.png\" height=\"80\"></a>\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
